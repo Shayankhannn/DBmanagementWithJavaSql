@@ -83,10 +83,62 @@ delete
 DELETE FROM books WHERE bookname = 'CLASSIC FIGHT';
 
 
+-----------------------
+
+sorting :
+
+order by
+ascending 
+descending
+
+by defaullt data is sort in ascending order by a to z or highest to lowest
+
+SELECT Title FROM Books ORDER BY Title; -- ASC BY DEFAULT
 
 
+SELECT Title,Genre, PublicationDate FROM Books ORDER BY GENRE ASC , PublicationDate DESC;
 
 
+SELECT Title ,Author, Price FROM Books 
+ORDER BY Author ASC,Price ASC;
+
+
+--------------------------------
+
+AGGREGATE FUNCTION
+
+COUNT -- COUNTS NUM OF ITEM FROM SET
+SUM -- ADDS ALL VALUE IN THE SET
+AVG -- AVERAGE VAL OF A SET
+MAX / MIN -- RETURNS MAX AND MIN VAL OF A SET
+
+SELECT COUNT(*) AS TOTALBOOKSOLD FROM Books;
+
+SELECT SUM(Sales) AS TOTALSALEREVENUE FROM Books ;
+
+SELECT AVG(Price) AS AVGPRISEPERBOOK FROM Books;
+
+SELECT MAX(Price) AS MOSTEXPBOOK, MIN(Price) AS MINEXPBOOK FROM Books;
+
+GROUP BY
+
+SELECT Region ,
+SUM(Sales) AS TOTALSALES,
+AVG(Sales) AS AVGSALE,
+MAX(Sales) AS MAXSALE,
+MIN(Sales) AS MINSALE,
+FROM Books
+GROUP BY Region;
+
+
+NULL VALUES ARE EXCLUDED FROM THESE FUNCS
+
+-----------------
+
+ACTIVITY
+
+SELECT GenreId , COUNT(*) FROM Tracks GROUP BY GenreId
+ 
 
 
 
