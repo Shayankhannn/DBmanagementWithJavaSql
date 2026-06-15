@@ -138,6 +138,34 @@ NULL VALUES ARE EXCLUDED FROM THESE FUNCS
 ACTIVITY
 
 SELECT GenreId , COUNT(*) FROM Tracks GROUP BY GenreId
+
+---------------------------------------
+
+
+HAVING
+
+ALLOWS YOU TO FILTER GROUP DATA
+
+WHERE -- RETRIEVE SUBSET OF RECORDS THAT MEET SPECIFIC CONDITION FROM A LARGER DATASET
+
+having - filter conditions on aggregate data :
+sum avg count max min 
+
+where filter before aggregation
+
+having filter after aggregation
+
+where is more efficient for larger data set as it filter data before aggregation reducing processing time
+
+SELECT BillingCountry , SUM(Total) AS CountryTotalSales
+FROM Invoices GROUP BY BillingCountry
+HAVING SUM(Total) > 300;
+
+
+- 
+The WHERE clause filters individual rows before any grouping or aggregation, while the HAVING clause filters groups of rows after aggregation has taken place.  
+
+having clause help you identify   key trends    and make stretigic decision effectively 
  
 
 
