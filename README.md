@@ -168,5 +168,3 @@ The WHERE clause filters individual rows before any grouping or aggregation, whi
 having clause help you identify   key trends    and make stretigic decision effectively 
  
 
-
-
