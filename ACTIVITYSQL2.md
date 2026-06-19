@@ -6,6 +6,9 @@ Goal
 Apply SQL operations to analyze sales data, focusing on identifying high-value transactions, measuring total revenue, and segmenting high-spending customers to enhance strategic decision-making and optimize marketing and sales efforts.
 
 
+Solution :::
+
+
 
 Write the SQL query:
 
