@@ -9,6 +9,9 @@ Apply SQL operations to analyze sales data, focusing on identifying high-value t
 Solution :::
 
 
+-->
+
+
 
 Write the SQL query:
 
